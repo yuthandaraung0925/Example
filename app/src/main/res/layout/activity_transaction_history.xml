@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransactionHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_have"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtViewBalance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:id="@+id/txtBalance"
+            android:layout_below="@id/txtViewBalance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_no"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtViewAccountNo"
+            android:layout_below="@id/txtBalance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:id="@+id/txtAccountNo"
+            android:layout_below="@id/txtViewAccountNo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_holder"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtViewAccountHolder"
+            android:layout_below="@id/txtAccountNo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtAccountHolder"
+            android:layout_below="@id/txtViewAccountHolder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/your_transaction_history"
+            android:layout_below="@id/txtAccountHolder"
+            android:id="@+id/txtViewTransactionHistory"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_below="@id/txtViewTransactionHistory"
+            android:id="@+id/layoutTransaction">
+
+            <ExpandableListView
+                android:id="@+id/lvTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--            <ListView-->
+<!--                android:id="@+id/lvTransaction"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--            </ListView>-->
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnTransfer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/layoutTransaction"-->
+<!--            android:layout_gravity="center|bottom"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:text="@string/make_transfer" />-->
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="525dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/make_transfer" />
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--           -->
+
+<!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp"-->
+<!--        android:weightSum="1"-->
+<!--        android:id="@+id/linearLayout">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="29dp"-->
+<!--            android:text="@string/you_have"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_weight="0.36" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txtTotalAmount"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/account_no"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txtAccountNo"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/account_holder"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_horizontal|top">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txtAccountHolder"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <ListView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:id="@+id/lvDisDetails"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentStart="true" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_gravity="center_horizontal|bottom">-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/make_transfer"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:id = "@+id/btnTransfer"/>-->
+<!--    </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>

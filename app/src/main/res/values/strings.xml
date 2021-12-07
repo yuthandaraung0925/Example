@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="require_username">Username is required.</string>
+    <string name="require_password">Password is required.</string>
+    <string name="require_confirm_password">Confirm Password is required.</string>
+    <string name="match_confirm_password">Confirm Password is not match.</string>
+    <string name="transfer">Transfer</string>
+    <string name="make_transfer">Make Transfer</string>
+    <string name="transfer_now">Transfer Now</string>
+    <string name="logout">Logout</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="your_transaction_history">Your transaction history</string>
+    <string name="payee">Payee</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="you_have">You have</string>
+    <string name="sgd">SGD </string>
+    <string name="account_no">Account No</string>
+    <string name="account_holder">Account Holder</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="user_exists">User Exists</string>
+    <string name="token_error">Token Error</string>
+    <string name="token_error_message">Please logout and login again.</string>
+    <string name="require_amount">Amount is required.</string>
+    <string name="amount_greater_zero">Amount is invalid. Please enter valid one.</string>
+    <string name="amount_compare_balance">Amount is greater than your balance.</string>
+    <string name="require_description">Description is required.</string>
+    <string name="transfer_successful">Transfer Successful</string>
+    <string name="register_successful">Register Successful</string>
+    <string name="login_error">Username or Password is incorrect. Please try again.</string>
+    <string name="register_error">Username already exists.</string>
+    <string name="amount_info">** Please enter integer value. **</string>
+
+
+    <string name="title_activity_transaction_history">TransactionHistoryActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_transfer">TransferActivity</string>
+</resources>
