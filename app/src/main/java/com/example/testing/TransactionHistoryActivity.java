@@ -93,7 +93,7 @@ public class TransactionHistoryActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = pref.edit();
             editor.putString("Balance", Utils.encryptData(balance));
             editor.commit();
-            finish();
+            //finish();
 
             Intent intent = new Intent(getApplicationContext(), TransferActivity.class);
             startActivity(intent);
